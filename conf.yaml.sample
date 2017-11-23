@@ -1,0 +1,9 @@
+input_token_files: "data/thread.txt"
+word2vec_model_path: "data/w2v.dat"
+max_title_tokens: 20
+num_vocab: 20000
+model_params:
+    batch_size: 256
+    epochs: 100
+    rnn_dim: 128
+model_path: "data/model/model_e{epoch:02d}.dat"

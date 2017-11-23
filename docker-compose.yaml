@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  dev:
+    build: .
+    container_name: dev
+    command: /bin/bash
+    tty: true
+    privileged: true
+    volumes:
+      - "./:/home/docker/model"
