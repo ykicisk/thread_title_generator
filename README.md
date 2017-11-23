@@ -1,11 +1,12 @@
 # thead_title_generator
 
-5chのなんJスレタイを生成する。
+5chのなんJスレタイを生成するスクリプト群
 
 ## 依存関係
 
 * nvidia-docker
 * https://github.com/eywalker/nvidia-docker-compose
+* https://github.com/attardi/wikiextractor
 
 ## nvidia-docker上での作業をするときの操作
 
@@ -28,11 +29,9 @@ $ sudo nvidia-docker-compose down
 
 ### wikipediaコーパスの取得・前処理
 
-wikipediaコーパスはEmbedding層の事前学習に利用する。
+wikipediaコーパスはEmbedding層の事前学習に利用します。
 
 #### 取得
-
-基本はDocker内での作業
 
 ```sh
 $ cd data/wikipedia
